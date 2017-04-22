@@ -1,4 +1,221 @@
-\chapter{Introducción}
+\documentclass{book}
 
-Este manual sobre software libre fue escrito por los alumnos de la cohorte 2017 de la asignatura electiva ``Ingeniería de software de fuentes abiertas/libre'', correspondiente al quinto nivel de la carrera de Ingeniería en Sistemas de Información de la Facultad Regional Córdoba de la Universidad Tecnológica Nacional.
+\usepackage[spanish]{babel}
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc}
+\title{Introducción Al Sofware Libre}
+\author{Rodolo Fernando Juarez y Dario Fernando Tomatis}
+\begin{document}
+\maketitle
+\section{Introducción al Software Libre}
+\subsection{Algo de Historia}
+
+1970s,
+Hasta entonces, la mayoría de las compañías tenían como una forma de cortesía el
+hábito de publicar el código fuente en archivos legibles. Las mejoras eran publicadas y las empresas adoptan estas mejoras.
+
+AT\&T en 1970 distribuía las primeras versiones de UNIX (n Dennis Ritchie, Ken Thompson y Douglas McIlroy) sin costo para el gobierno y para los investigadores académicos, pero no se permitía su distribución ni la distribución de versiones modificadas. 
+\\
+{\it 
+Punto de debate: ¿Esto era Software Libre?
+Concepto:
+El término software libre refiere el conjunto de software (programa informático) que por elección manifiesta de su autor, puede ser copiado, estudiado, modificado, utilizado libremente con cualquier fin y redistribuido con o sin cambios o mejoras.
+Como resultado de esto nace BSD, que luego deriva en SunOS, FreeBSD, NetBSD, PC-BSD, OpenBSD y Mac OS X.
+}
+\\
+{\bf ¿Compartir o Robar?}
+
+{\bf En 1976}, Bill Gates marcó el gran cambio de era cuando escribió, su ahora famosa Carta abierta a los aficionados, mandando el mensaje de que lo que los hackers llaman «compartir» era, en sus palabras, «robar». Por ejemplo, en 1979, AT\&T empezó a hacer cumplir sus licencias restrictivas cuando la compañía decidió que podrían generar utilidades vendiendo el sistema Unix.9
+\\
+{\bf En 1979}, Caso, Reid vender Scribe a Unilogic. Se insertaron un conjunto de funciones dependientes del tiempo que desactivaba las versiones copiadas libremente después de un período de expiración de 90 días.
+Reid había insertado una forma en que las compañías obligaban a los programadores a pagar por el acceso a la información.
+\\
+{\bf 1979 -1980} Primeros contactos con los acuerdos de no revelar (nondisclosure agreement) NDA, incidente en Carnegie Mellon con un ex investigador de Xerox.
+\\
+{\bf 1979 - 1980} La cultura del software cambia, empieza a nacer el código propietario.
+El software se había convertido en una posesión tan valiosa y estratégica por lo que dejaron de publicar sus códigos fuentes.
+\\
+\\
+{\it Punto de Debate: ¿Que motivaron los proyectos de Software Libre?
+\\
+En 1983, Richard Stallman lanzó el proyecto GNU para escribir un sistema operativo completo libre de restricciones para el uso, modificación y distribuirlo con o sin mejoras. Uno de los incidentes particulares que lo motivaron a esto fue el caso de una molesta impresora que no podía ser arreglada porque el código fuente no era revelado.
+\\
+Otro posible evento de inspiración para el proyecto GNU y su manifiesto fue el desacuerdo entre Stallman y Symbolics, Inc. sobre el acceso a las actualizaciones, por parte del MIT, que Symbolics había realizado a su máquina Lisp, la cual estaba basada en código del MIT.13 Poco tiempo después de su lanzamiento, acuñó el término "software libre" y para promover el concepto fundó la Free Software Foundation.
+Una definición de software libre fue publicada en febrero de 1986.
+}
+\\
+{\bf En 1985} Nace Free Software Foundation (Free Software Foundation América Latina. Fundada en el 2005)
+
+Cuyo objetivo es promover y defender el uso y desarrollo de software libre, y el derecho de las personas a usar, estudiar, copiar, modificar y redistribuir software.
+
+\subsection{ El Software Libre}
+
+El Software Libre es un movimiento sociopolitico surgido hace más de dos décadas que tiene como objetivo promover la creación, expansión de software que respeta las libertades de los usuarios.
+
+Refuerzo de definición: ¿Cuáles son esas libertades?
+
+Existen por definición cuatro libertades básicas que debe poseer un software para ser considerado libre:
+
+{\bf Libertad 0:}
+La libertad de usar el software de la forma que uno quiera. De forma opuesta, muchos programas de computadora privativos no permiten ciertos usos como por ejemplo, crear otro producto que compita con ese software.
+\\
+{\bf  Libertad 1:}
+La libertad de estudiar y mejorar el software. Esto es imposible si no tenemos acceso al código fuente, por eso el Software Libre se caracteriza por distribuirlo además del binario/ejecutable.
+\\
+{\bf Libertad 2:}
+La libertad de copiarlo y compartirlo. El Software Libre es, como ya dije, un movimiento social. Cree que el compartir es algo bueno y no es un delito. Se han inventado conceptos descabellados como “piratería” para defenestrar el maravilloso acto de ser una persona generosa, una buena persona. El Software Libre defiende esos valores y por eso no es ilegal copiarlo y compartirlo. Es más, su éxito se basa justamente en eso.
+\\
+{\bf Libertad 3:}
+La libertad de distribuir las mejoras hechas. Gracias a la Libertad 1 podemos aprender como funciona el software, esta libertad nos permite hacer nuestro aporte. Esta libertad es la responsable de generar comunidades de personas que mejoran y comparten sus soluciones unos con otros.
+\\
+{\bf En 1989} Nace la licencia GPL, creada por Richard Stallman en 1989 para proteger los programas liberados como parte del proyecto GNU.
+\\
+\\
+{\it Punto de debate ¿SW Libre solo para algunos? O ¿Libre de compromiso de calidad?
+\\
+Existen algunas desventajas, como en cualquier tipo de software, como por ejemplo:
+El software libre se compra o se adquiere sin garantías explícitas del fabricante o autor.
+Las modificaciones o problemas encontrados requiere de la dedicación de recursos institucionales, así como a la adaptación a las necesidades del usuario que lo utilice.
+Los usuarios deben tener unos conocimientos mínimos de programación para modificarlo y adaptarlo al contexto educativo.
+}
+\\
+{\it Punto de debate ¿No compartir codigo es malo?
+\\
+La motivación ética, esgrimida la Free Software Foundation ente que argumenta que el software es conocimiento y debe poderse difundir sin trabas. Su ocultación es una actitud antisocial y la posibilidad de modificar programas es una forma de libertad de expresión, aunque sin olvidar una estructura jerarquizada por la meritocracia.
+\\
+La motivación pragmática, defendida por la Open Source Initiative, que argumenta ventajas técnicas y económicas, con respecto a evitar una tragedia de los anticomunes mejorando los incentivos.
+Aparte de estas motivaciones, quienes trabajan con software libre suelen hacerlo por muchas otras razones, que van desde la diversión a la mera retribución económica, que es posible debido a modelos de negocio sustentables.
+\\
+La mayoría de los desarrolladores de software libre provienen de países industrializados. El Mapa de desarrolladores del proyecto Debian muestra que la mayoría de desarrolladores se encuentran en Europa y Estados Unidos.
+Los usuarios deben estar al corriente de las modificaciones que se les haga al software para evitar confusiones.
+}
+\\
+{\bf En 1991} Nace el kernel Linux bajo  GPL creado por Linus Torvalds.
+\\
+{\bf En1998} Nace La Open Source Initiative (OSI)
+\\
+{\bf En 2001} Corporación Microsoft enfatiza su postura en contra de la Licencia Pública General de GNU.
+Categorizando a GPL como una licencia "viral"
+\\
+{\bf En 2001} Conferencia de Stallman masiva en New York en respuesta a los dichos de MicroSoft.
+\\
+{\it Pu1ntos de Debate ¿Como afecta los distintos pensamientos a la industria del SoftWare?
+\\
+\emph{Para el sector del software privativo GNU es:}
+Socava fundamentalmente el sector de software comercial independiente debido a que: efectivamente hace que sea imposible el distribuir software bajo una base donde los compradores pagan por el producto algo más que tan sólo el costo de la distribución.
+Limita el presupuesto para la investigación de nuevas tecnologias.
+\\
+\emph{Para los seguidores del SL, el sector privado es:}
+Lleva al abuso del monopolio y al estancamiento, fuertes compañías se absorben todo el oxígeno del mercado quitándoselo a los competidores rivales y a los principiantes innovadores.
+}
+\\
+{\bf Convivencia de ambos pensamientos.}
+El éxito mutuo de GNU/Linux, el sistema operativo amalgamado construido alrededor del núcleo
+Linux protegido por la GPL, y de Windows a lo largo de los últimos 10 años revela la sabiduría de
+ambas perspectivas.
+\\
+{\bf ¿Cual es el grado de control de nuestros software?}
+\\
+Si estas usando alguna versión del sistema operativo Microsoft Windows. Usted está cediendo el control de toda su información, usted está en manos de alguien más, usted no tiene forma de saber que está haciendo su computadora en este instante.
+\\
+Aunque fuera  técnico tampoco lo sabría. El propietario del software es quien lo sabe y usted no lo es. 
+Él decidió negarle a usted el control y claro, usted aceptó. Es usted es tan solo un consumidor.
+
+\subsection{Categorías de software libre y software que no es libre}
+	.
+\begin{description}
+	\item[$\cdot$ Software libre]
+	\item[$\cdot$ Software de código abierto («Open Source»)]
+	\item[$\cdot$ Software de dominio público]
+	\item[$\cdot$ Software con copyleft]
+	\item[$\cdot$ Software libre sin copyleft]
+	\item[$\cdot$ Software con licencia permisiva, laxa]
+	\item[$\cdot$ Software con licencia GPL]
+	\item[$\cdot$ Software GNU bajo copyright de la FSF]
+	\item[$\cdot$ Software que no es libre]
+	\item[$\cdot$ Software Privativo]
+\end{description}
+
+Leer mas en: https://www.gnu.org/philosophy/categories.es.html
+\\
+{\it
+\emph{Nota al Margen:} Con el SL se ganan dos cosas: una amistad incrementada y la habilidad para pedir prestado interesantes recetas como intercambio.
+\\
+\emph{Paradoja de SL En China:}
+Se ha demorado mucho en ser entendido. Hacer la comparación entre software libre y libertad de expresión es más difícil cuando no hay libertad de expresión
+}
+\subsection{Algunos Hitos del SL}
+
+\begin{description}
+\item[$\cdot$ 1969 – Creación de ARPANET]
+\item[$\cdot$ 1970 – Creación de UNIX en los Laboratorios Bell]
+\item[$\cdot$ 1979 – Creación de BSD en la Universidad de California]
+\item[$\cdot$ 1983 – Richard Stallman inicia el movimiento GNU]
+\item[$\cdot$ 1984 – Se crea el entorno gráfico X Window System]
+\item[$\cdot$ 1985 – Se funda la Free Software Fundation]
+\item[$\cdot$ 1989 – GNU está casi completo, pero falta el núcleo]
+\item[$\cdot$ 1991 – Se inicia el desarrollo del núcleo Linux por Linus Torvalds]
+\item[$\cdot$ 1992 – Primera distribución GNU/Linux: SLS]
+\item[$\cdot$ 1993 – Creación de las distribuciones Debian y Slackware]
+\item[$\cdot$ 1994 – Creación de Redhat y Suse]
+\item[$\cdot$ 1996 – Inicio del proyecto KDE]
+\item[$\cdot$ 1997 – Inicio del movimiento Open Source. Creación de la OSI. Inicio del proyecto GNOME]
+\item[$\cdot$ 1998 – Netscape es liberado como software libre]
+\item[$\cdot$ 2002 – Creación de Gentoo y Linex]
+\item[$\cdot$ 2003 – Creación de Knoppix y Fedora Core]
+\item[$\cdot$ 2004 – Creación de Ubuntu]
+\item[$\cdot$ 2005 - Git creado por Linus Torvalds]
+\end{description}
+
+\subsection{Futuro del Software Libre}
+
+
+	El SL a tenido ha sido un agente de cambio y de evolución en la industria del software.
+Muchas empresas se han provistos de sus desarrollos para su beneficio propio y en algunos casos incumpliendo con las licencias GPL al no publicar sus códigos fuentes.
+	Recientemente han empezado haber juicios a favor de FSF sobre estas prácticas que afirman y renuevan el SL.
+
+Leer mas en: http://www.eveliux.com/mx/El-futuro-del-Software-Libre.html
+
+\subsection{Ética y el software libre}
+
+{\bf Caso Android. ¿ Android es Software Libre?}
+\\
+\\
+Android. Android es un \emph{software de código abierto} que se distribuye bajo la licencia Apache V2.
+\\
+La licencia Apache V2 da permiso para:
+\\
+Utilizar el software para cualquier propósito, distribuirlo, modificarlo y distribuir las modificaciones
+no tiene copyleft por lo que las versiones modificadas no tienen que ser distribuidas como software libre.
+Compatible con GPL3 pero no con las anteriores.
+Incluye provisiones de protección respecto a patente.
+\\
+Android es un software de código abierto con  acceso al código fuente del mismo, pero terceras partes, como por ejemplo fabricantes, pueden modificarlo o añadir código y este no tiene porqué ser liberado. 
+\\
+Leer mas en: https://www.androidsis.com/android-es-software-libre-estamos-en-lo-cierto/
+
+\subsection{Conclusion}
+	
+Gracias a la cultura de compartir el conocimiento (El software) la industria al dia de hoy se vio afectada favorablemente, derivando en importantes desarrollos como lo fueron Unix, BSD, TCP/IP, etc.
+Cuando las empresas en su afán de consolidar su posición en el mercado, entendieron que el software era un activo valioso decidieron que esta no debía ser compartido tan a la ligera, dando lugar a las NDA y al software privativo.
+\\
+En este movimiento se han cometido muchos abusos, hasta patentar y registrar cosas triviales que permiten a las empresas demandar a otras por un Doble Click, ¡literalmente! (Registro de Microsoft).
+\\
+Ya hace tiempo, las empresas también entendieron  que no solo el software es un activo importantes, sino, aún más valioso son los datos generados por estos. Dando lugar a una proliferación de software gratuito o de código abierto con el objetivo de obtener datos de lo más variado y estos ser usados con fines estratégicos y/o comerciales.
+\\
+Cuando no tenemos el código fuente no es posible saber como este esta hecho, tampoco como este funciona, ya que no es transparente. 
+Solo si sabemos como funciona el software podemos hablar de transparencia y solo cuando tenemos acceso a modificar el funcionamiento del software estamos habilitados a dejar ser simples consumidores.
+\\
+La distinción crucial del software es justamente ésta: el acceso a poder entender cómo funciona y poder modificarlo. 
+\\
+Como usuarios debemos entender cómo estas empresas actúan, aceptando o rechazando sus prácticas.
+\\
+Otra observación sobre las grandes corporaciones y su software privativo es el empoderamiento a través de estrategias destinadas a copar el mercado con sus producto y estableciendolos como protocolos defactos.
+El usuario domestico solo es una arista menor, siendo su principal interes las empresas que deberan adaptarse a las tecnologias dispuesta en el mercado, que mediane la renovación constante de licencias y actulizaciones generan la depencia buscada.
+\\
+Si todos usan una misma tecnologia, esta se vuelve el standar, provocando un efecto contagio.
+\\
+\emph{El software una vez creado, es facil de copiar, no puede ser escaso, por lo que su precio deberia tender a 0}, la unica manera de hacer que la demanda se mantenga, es mediante la creacion de restricciones artificiales sobre el software, como por ejemplo: Licencias de uso por tiempo determinado.
+
+\end{document}
 
