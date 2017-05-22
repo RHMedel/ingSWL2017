@@ -1,1 +1,267 @@
 \chapter{Sistemas operativos de software libre}
+
+\section{Distribuciones Linux}
+Una distribución Linux (coloquialmente llamada distro) es una distribución de software basada en el núcleo Linux que incluye determinados paquetes de software para satisfacer las necesidades de un grupo específico de usuarios, dando así origen a ediciones domésticas, empresariales y para servidores. Por lo general están compuestas, total o mayoritariamente, de software libre, aunque a menudo incorporan aplicaciones o controladores propietarios.
+Además del núcleo Linux, las distribuciones incluyen habitualmente las bibliotecas y herramientas del proyecto GNU y el sistema de ventanas X Window System. Dependiendo del tipo de usuarios a los que la distribución esté dirigida se incluye también otro tipo de software como procesadores de texto, hoja de cálculo, reproductores multimedia, herramientas administrativas, etc. En el caso de incluir herramientas del proyecto GNU, se denomina distribución GNU/Linux.
+Existen distribuciones que están soportadas comercialmente, como Fedora (Red Hat), openSUSE (Novell), Ubuntu (Canonical Ltd.) y Mandriva; distribuciones mantenidas por la comunidad, como Debian y Gentoo; y distribuciones que no están relacionadas con ninguna empresa o comunidad, como es el caso de Slackware.
+
+\section{Historia de las distribuciones Linux}
+Las distribuciones Linux comenzaron a surgir poco después de que el núcleo Linux fuera utilizado por otros programadores además de los creadores originales. Existía mayor interés en desarrollar un sistema operativo que en desarrollar aplicaciones, interfaces para los usuarios o un paquete de software conveniente.
+
+Entre las distribuciones más antiguas se incluían:
+
+\begin{itemize}
+\item Dos discos denominados H J Lu's «Boot-root» con el núcleo y un mínimo de herramientas para utilizar.
+\item MCC Interim Linux, que se podía descargar en un servidor público FTP de la Universidad de Mánchester en febrero de 1992.
+\item TAMU, creado por entusiastas de la Universidad de Texas A\&M al mismo tiempo que SLS
+\item SLS (Softlanding Linux System).
+\item Yggdrasil Linux creó el primer CD-ROM de una distribución Linux.
+\end{itemize}
+
+SLS no estuvo bien mantenida; así pues, Patrick Volkerding lanzó una distribución basada en SLS a la que llamó Slackware; lanzada el 16 de julio de 1993.1 Esta es la distribución más antigua que está en desarrollo activo.
+
+Los usuarios vieron en Linux una alternativa a los sistemas operativos DOS, Microsoft Windows en la plataforma PC, Mac OS en Apple Macintosh y las versiones de uso bajo licencia (de pago) de UNIX. La mayoría de estos primeros usuarios se habían familiarizado con el entorno UNIX en sus trabajos o centros de estudios. Estos adoptaron GNU/Linux por su estabilidad, reducido (o nulo) coste y por la disponibilidad del código fuente del software incluido.
+
+Si bien, históricamente, Linux estuvo mejor posicionado en el mercado de los servidores, distribuciones centradas en la facilidad de instalación y uso, tales como Fedora, Mandriva, OpenSuSE, Knoppix y Ubuntu, entre otras, han logrado una mayor aceptación en el mercado doméstico.
+
+\section{Componentes de una distribución}
+El conjunto típico de una distribución Linux contiene un núcleo, herramientas y bibliotecas, software adicional, documentación, un sistema de ventanas, un administrador de ventanas y un entorno de escritorio, este suele ser GNOME o KDE. Gran parte del software incluido es de fuente abierta o software libre y distribuido por sus desarrolladores tanto en binario compilado como en forma de código fuente, permitiendo a sus usuarios modificar o compilar el código fuente original si lo desean. Muchas distribuciones incorporan software privativo, no disponible en forma de código fuente.
+
+\begin{itemize}
+\item Gestión de paquetes
+	  Las distribuciones están divididas en «paquetes». Cada paquete contiene una aplicación específica o un servicio. 			  Ejemplos de paquetes son una biblioteca para manejar el formato de imagen PNG, una colección de tipografías o un 			  navegador web.
+	  El paquete es generalmente distribuido en su versión compilada y la instalación y desinstalación de los paquetes es 		  controlada por un sistema de gestión de paquetes en lugar de un simple gestor de archivos.En este caso Cada paquete 		  elaborado para ese sistema de paquetes contiene meta-información tal como fecha de creación, descripción del paquete 	  y sus dependencias. El sistema de paquetes analiza esta información para permitir la búsqueda de paquetes, 				  actualizar las librerías y aplicaciones instaladas, revisar que todas las dependencias se cumplan y obtenerlas si no 	  se cuenta con ellas de manera automática.	
+	  \\
+	  \\
+	  Algunos de los sistemas de paquetes más usados son:
+	  \begin{itemize}
+	  \item RPM, creado por Red Hat y usado por un gran número de distribuciones de Linux, es el formato de paquetes del 		   Linux Standard Base. Originalmente introducido por Red Hat, pero ahora se usa en muchas distribuciones, como por 		   ejemplo Mandriva.
+	  \item Deb, paquetes Debian, originalmente introducidos por Debian, pero también utilizados por otros como Knoppix y 		   Ubuntu.
+	  \item .tgz, usado por Slackware, empaqueta el software usando tar y gzip. Pero, además, hay algunas herramientas de 		   más alto nivel para tratar con este formato: slapt-get, slackpkg y swaret.
+	  \end{itemize}	  
+\end{itemize}
+
+\section{Características de una distribución Linux}
+En general, las distribuciones Linux pueden ser:
+\begin{itemize}
+\item Comerciales o no comerciales.
+\item Ser completamente libres o incluir software privativo.
+\item Diseñadas para uso en el hogar o en las empresas.
+\item Diseñadas para servidores, escritorios o dispositivos empotrados.
+\item Orientadas a usuarios regulares o usuarios avanzados.
+\item De uso general o para dispositivos altamente especializados, como un cortafuegos, un enrutador o un clúster computacional.
+\item Diseñadas e incluso certificadas para un hardware o arquitectura específicos.
+\item Orientadas hacia grupos en específico, por ejemplo a través de la internacionalización y localización del lenguaje, o por la inclusión de varios paquetes para la producción musical o para computación científica.
+\item Configuradas especialmente para ser más seguras, completas, portables o fáciles de usar.
+\item Soportadas bajo distintos tipos de hardware.
+\end{itemize}
+
+La diversidad de las distribuciones Linux es debido a cuestiones técnicas, de organización y de puntos de vista diferentes entre usuarios y proveedores. El modo de licenciamiento del software libre permite que cualquier usuario con los conocimientos e interés suficiente pueda adaptar o diseñar una distribución de acuerdo a sus necesidades.
+
+\section{Distribuciones populares}
+
+Entre las distribuciones Linux más populares se incluyen:
+
+\begin{itemize}
+\item Arch Linux, una distribución basada en el principio KISS, con un sistema de desarrollo continuo entre cada versión (no es necesario volver a instalar todo el sistema para actualizarlo).
+\item Canaima, es un proyecto socio-tecnológico abierto, construido de forma colaborativa, desarrollado en Venezuela y basado en Debian.
+\item CentOS, una distribución creada a partir del mismo código del sistema Red Hat pero mantenida por una comunidad de desarrolladores voluntarios.
+\item Chakra project, una popular distribución para escritorio, inicialmente basada en Arch Linux, actualmente se encuentra en un desarrollo independiente.
+\item Debian, una distribución mantenida por una red de desarrolladores voluntarios con un gran compromiso por los principios del software libre.
+\item Dragora y Trisquel, que van adquiriendo importancia entre las distribuciones que sólo contienen software libre.
+\item Elementary OS Es una distribución Linux basada en Ubuntu 12.04
+\item Fedora, una distribución lanzada por Red Hat para la comunidad.
+\item Fuduntu, distribución ligera y rápida basada en Fedora y orientada al uso en notebooks.
+\item Gentoo, una distribución orientada a usuarios avanzados, conocida por la similitud en su sistema de paquetes con el \item FreeBSD Ports, un sistema que automatiza la compilación de aplicaciones desde su código fuente.
+\item Huayra, distribución Educativa, desarrollada por el estado Argentino, desde el Anses /Programa Conectar Igualdad. Está basada en Debian Jessie con entorno de escritorio MATE.
+\item Knoppix, fue la primera distribución live en correr completamente desde un medio extraíble. Está basada en Debian.
+\item Kubuntu, la versión en KDE de Ubuntu.
+\end{itemize}
+
+\section{Distribuciones especializadas}
+Otras distribuciones se especializan en grupos específicos:
+
+\begin{itemize}
+\item 64 Studio, una distribución basada en Debian diseñada para la edición multimedia.
+\item ABC GNU/Linux, distribución para la construcción de clusters Beowulf desarrollado por Iker Castaños Chavarri, Universidad del País Vasco.
+\item Kali Linux, distribución basada en Debian y especializada en seguridad de red.
+\item BackTrack, distribución basada en Ubuntu y especializada en seguridad de red.
+\item WiFiSlax, distribución basada en Slackware y especializada en seguridad de red.
+\item Wifiway, distribución basada en Ubuntu y especializada en seguridad de red.
+\item Debian Med, Debian Med es una distro orientada a la práctica médica y a la investigación bio-médica.
+\end{itemize}
+
+\section{Berkeley Software Distribution (BSD)}
+
+Berkeley Software Distribution fue un sistema operativo derivado del sistema Unix nacido a partir de los aportes realizados a ese sistema por la Universidad de California en Berkeley. En los primeros años del sistema Unix sus creadores, los Laboratorios Bell de la compañía AT\&T, autorizaron a la Universidad de Berkeley en California y a otras universidades, a utilizar el código fuente y adaptarlo a sus necesidades. Durante los años 1970 y 1980 Berkeley utilizó el sistema para sus investigaciones en materia de sistemas operativos. Cuando AT\&T retiró el permiso de uso a la universidad por motivos comerciales, la universidad promovió la creación de una versión inspirada en el sistema Unix utilizando los aportes que ellos habían realizado, permitiendo luego su distribución con fines académicos y al cabo de algún tiempo reduciendo al mínimo las restricciones referente a su copia, distribución o modificación.
+
+\section{Sistemas Operativos derivados de BSD}
+
+\begin{itemize}
+	\item SunOS
+	\item FreeBSD
+	\item NetBSD
+	\item PC-BSD
+	\item OpenBSD
+	\item Mac OS X
+\end{itemize}
+
+\section{Contribuciones de BSD}
+
+\begin{itemize}
+	\item El manejo de memoria virtual paginado por demanda.
+	\item El control de trabajos.
+	\item El Fast FileSystem.
+	\item El protocolo TCP/IP.
+\end{itemize}
+
+\section{Versiones importantes de BSD}
+
+\begin{itemize}
+	\item BSD 1 era un añadido a la sexta edición Unix, más que un sistema operativo completo. Estaba compuesto principalmente de un compilador Pascal y un editor de texto.
+	\item BSD 2 fue lanzada en 1978, incluía versiones actualizadas de BSD 1 y además dos nuevos programas que perduran en los sistemas Unix hasta hoy día. El editor de textos vi y el shell de C.
+	\item BSD 2.9 fue la primera distribución considerada como un sistema operativo completo (Una modificación de Unix 7).
+\end{itemize}
+
+\section{Licencia BSD}
+
+ Es una licencia de software libre permisiva como la licencia de OpenSSL o la MIT License. Esto está en contraste con las licencias copyleft, que tienen de reciprocidad requisitos de compartir-igual. Esta licencia tiene menos restricciones en comparación con otras como la GPL estando muy cercana al dominio público. La licencia BSD al contrario que la GPL permite el uso del código fuente en software no libre.
+ La licencia permisiva de BSD ha permitido que otros sistemas operativos, tanto libres como propietarios incorporaran código BSD. Por ejemplo, Microsoft Windows ha utilizado código derivado de BSD en su implementación de TCP/IP, y utiliza versiones recompiladas de la línea de comandos BSD para las herramientas de redes. También Darwin, el sistema en el cual está construido Mac OS X, el sistema operativo de Apple, está derivado en parte de FreeBSD 5. Otros sistemas basados en Unix comerciales como Solaris también utilizan código BSD.
+ 
+\section{ReactOS}
+
+ Su desarrollo comenzó en 1995, como un clon de Windows 95 llamado FreeWin95, que fue continuado a principios de 1998 como ReactOS, y ha continuado con la incorporación gradual de características de las últimas versiones de Windows. ReactOS ha sido señalado como un posible reemplazo drop-in de código abierto para Windows y por su información sobre las APIs de Windows indocumentadas.
+ReactOS está principalmente escrito en C, con algunos elementos, tales como ReactOS Explorer y la pila del sonido, escritos en C++.
+
+\section{Objetivo}
+
+El objetivo de este sistema operativo era que sea capaz de competir a nivel binario con Windows y que los usuarios familiarizados con la interfaz de windows puedan usar fácilmente este SO.
+
+\section{Versiones importantes}
+
+\begin{itemize}
+	\item La primera versión del sistema con interfaz gráfica de usuario funcional salió en 2004.
+	\item En febrero de 2017 salió la última versión (0.4.4) que incluye: Soporte inicial de pila de impresión, correcciones menores de fuentes, mejoras y correcciones de errores.
+	\item La próxima versión del sistema va a ser la 0.5 y va a ser considerada Beta. No se sabe cuando sale, pero si lo que va a incluir: Soporte de escritura para NTFS, soporte para drivers WDM (Windows Driver Model), impresoras y DirectX.
+	\item Hoy en día es considerado como software alfa, que, si bien posee características incompletas, muchas aplicaciones de Windows ya funcionan y por lo tanto es recomendado por desarrolladores solamente para propósitos de evaluación y prueba.
+\end{itemize}
+
+\section{Chrome OS}
+
+Es el sistema operativo de Google basado en la nube de kernel linux con licencia BSD y de c\'odigo abierto. Se dice ``basado en la nube'' ya que puede prescindir de disco duro y toda la informaci\'on del usuario queda en servidores de Google, el inicio del mismo es sumamente r\'apido con un tiempo de booting de 8 segundos y solo funciona bajo microprocesadores x86 o ARM.
+
+\section{Un poco de historia}
+
+\begin{itemize}
+     \item En Julio de 2009 Google anuncia el Sistema Operativo.
+     \item En Noviembre 2009 se libera el código fuente bajo licencia BSD y a mayo del 2010 ya hab\'ia 1.000.000 de descargas, el proyecto es llamado Chromium OS. 
+     \item En Diciembre 2010 se crea un programa piloto el cual google envia a usuarios de Estados Unidos chromebooks llamadas CR-48 sin costo alguno con el fin de obtener feedback de usuarios.
+     \item En Mayo 2011 se realiza el lanzamiento de chromebooks fabricados por socios de Google, ellos son Acer y Samsung.
+\end{itemize}
+
+%\newpage
+\section{Carater\'isticas}
+
+La interfaz gr\'afica de Chrome OS es minimalista aproxim\'andose a Mac OS y Windows siendo sus principales competidores, la principal idea es contar con un Sistema Operativo con escritorio orientado hacia internet y Google lo considera una extensión natural del navegador Chrome.
+\\
+\\
+Otras Caracter\'isticas:
+
+\begin{itemize}
+     \item Soporta la ejecuci\'on solamente de aplicaciones Web.
+     \item Requisitos mínimos de hardware: RAM: 2GB, Disco duro: 6GB.
+     \item Interfaz Gr\'afica del navegador de Chrome.
+	 \item Corre bajo hardware específico y preinstalado en Chromebooks.
+\end{itemize}
+
+\section{Chromium OS}
+
+Básicamente es el proyecto de código abierto que guia el desarrollo de Chrome OS, para convertirse en colaborador del proyecto es necesario tener instalado Ubuntu 10.04 y utiliza el gestor de paguetes de la distribución de Linux Gentoo haciendolo un hibrido entre Gentoo y Ubuntu. La arquitectura del mismo está dividida en tres capas: el firmware, el navegador web y el gestor de ventanas.
+\\
+El código fuente fué descargado mas de 1.000.000 de veces a mayo del 2010 y ya en ese momento surge una versión popular llamada Chromium OS Flow creada por Liam McLoughlin, esto hizo más interesante al Sitema Operativo ya que incorpora compilaciones desde memoria USB y también la posibilidad de ejecutar aplicaciones desarrolladas en Java. Ingenieros de Google quedaron sorprendidos ya que no habian sido implementadas ni imaginadas por ellos esas funcionalidades y lo mas interesante aún es que Liam solo tenia 17 años a ese entonces.
+\\
+\\
+Para convertirse en colaborador los siguientes links pueden ser de utilidad:
+\begin{itemize}
+     \item Sitio del proyecto: http://dev.chromium.org/chromium-os
+     \item C\'odigo fuente: git clone https://chromium.googlesource.com/chromiumos
+\end{itemize}
+
+%\newpage
+\section{Sistemas Operativos Mobile}
+
+Un sistema operativo móvil o SO móvil es un conjunto de programas de bajo nivel que permite la abstracción de las peculiaridades del hardware específico del teléfono móvil y provee servicios a las aplicaciones móviles, que se ejecutan sobre él. Al igual que los PCs que utilizan Windows o Linux o mac, los dispositivos moviles tienen sus sistemas operativos como Android, IOS Windows Phone, entre otros.
+\\
+\\
+
+\section{Sistemas Operativos Mobile Open Source}
+
+{\bf Firefox OS}
+Firefox OS es un sistema operativo móvil, basado en HTML5 con núcleo Linux, para smartphones y tabletas. Es desarrollado por Mozilla Corporation bajo el apoyo de otras empresas como Telefónica y una gran comunidad de voluntarios de todo el mundo. Este sistema operativo está enfocado especialmente en los dispositivos móviles incluidos los de gama baja. Está diseñado para permitir a las aplicaciones HTML5 comunicarse directamente con el hardware del dispositivo usando JavaScript y Open Web APIs. Ha sido mostrado en smartphones y Raspberry Pi, compatibles con Android.
+En febrero de 2013 Mozilla anunció planes para el lanzamiento mundial de Firefox OS. Mozilla ha comunicado en rueda de prensa antes del inicio del Mobile World Congress en Barcelona, que la primera ola de dispositivos con Firefox OS estará disponible Brasil,Colombia, Hungría, México, Montenegro, Polonia, Serbia, España y Venezuela. Firefox también ha anunciado que LG Electronics, ZTE, Huawei y TCL Corporation se han comprometido a la fabricación de dispositivos con Firefox OS.
+\\
+\\
+{\bf Ubuntu Touch}
+Ubuntu Touch es un sistema operativo móvil basado en Linux. Es desarrollado por Canonical Ltd.. Presentado el 2 de enero de 2013 al público mediante un anuncio en la web de Ubuntu, culmina el proceso de Canonical de desarrollar una interfaz que pueda utilizarse en ordenadores de sobremesa, portátiles, netbooks, tablets y teléfonos inteligentes.
+Ubuntu Touch se caracteriza por ser un sistema diseñado para plataformas móviles. Unas de sus características más destacadas son:
+\begin{itemize}
+	 \item Pantalla de inicio sin sistema de bloqueo/desbloqueo (que funciona con un nuevo sistema de gestos, y que se aprovecha para mostrar notificaciones).
+ 	 \item Ubuntu Touch incluye como aplicaciones centrales de medios sociales y medios de comunicación (por ejemplo, aplicaciones de Facebook, YouTube, y un lector de RSS ). Las aplicaciones estándar, tales como una calculadora, un cliente de correo electrónico, un despertador, un gestor de archivos, e incluso un terminal están incluidos también. En este momento doce o más aplicaciones principales se están desarrollando.
+ 	 \item Integración con Ubuntu One.
+\end{itemize}
+
+
+{\bf Tizen}
+Tizen es un sistema operativo móvil basado en Linux, patrocinado por Linux Foundation y la Fundación LiMo. Tizen se construye a partir de la plataforma Linux de Samsung (Samsung Linux Platform - SLP) una implementación de referencia integrada en LiMo. El 1 enero de 2012, la fundación LiMo es renombrada como Asociación Tizen dirigida por un Consejo de Administración de Samsung, Intel, Huawei, Fujitsu, NEC, Panasonic, KT Corporation, Sprint Corporation, SK Telecom, Orange, NTT DoCoMo y Vodafone. La Asociación Tizen trabaja en estrecha colaboración con la Fundación Linux, que apoya el proyecto de código abierto Tizen.
+
+Las interfaces de desarrollo de Tizen están basadas en HTML5 y otros estándares web y será diseñado para su uso en tabletas, netbooks, teléfonos inteligentes, televisores inteligentes y sistemas integrados de información y entretenimiento.
+
+El 22 de julio de 2013 fue liberada la versión 2.2 Tizen será compatible con las aplicaciones actuales de Android. Los desarrolladores han hecho hincapié en que HTML5 no es la única plataforma disponible y también se han integrado las bibliotecas Enlightenment Foundation Libraries en el sistema operativo.
+\\
+Licencia
+\\
+Aunque originalmente fue presentado como un sistema operativo de código abierto, Tizen 2 ha complicado su modelo de licencias. Su SDK está construido sobre componentes de código abierto, pero el SDK completo ha sido publicado bajo una licencia de Samsung de código no abierto.
+
+El sistema operativo en sí mismo está compuesto de muchos componentes de código abierto. Una serie de componentes internos desarrollados por Samsung, como la animación del arranque y las aplicaciones de calendario, gestor de tareas y de reproductor de música son, sin embargo, publicados bajo la licencia Flora License la cual probablemente es incompatible con los requisitos de la Open Source Initiative.
+
+%\newpage
+\section{Android}
+Android es un sistema operativo basado en el núcleo Linux. Fue diseñado principalmente para dispositivos móviles con pantalla táctil, como teléfonos inteligentes, tablets y también para relojes inteligentes, televisores y automóviles. Inicialmente fue desarrollado por Android Inc., empresa que Google respaldó económicamente y más tarde, en 2005, compró. Android fue presentado en 2007 junto la fundación del Open Handset Alliance (un consorcio de compañías de hardware, software y telecomunicaciones) para avanzar en los estándares abiertos de los dispositivos móviles. El primer móvil con el sistema operativo Android fue el HTC Dream y se vendió en octubre de 2008. Los dispositivos de Android venden más que las ventas combinadas de Windows Phone e IOS.
+\\
+\\
+\\
+\\
+{\bf  Open Handset Alliance}
+La Open Handset Alliance (OHA) es una alianza comercial de 84 compañías que se dedica a desarrollar estándares abiertos para dispositivos móviles. Algunos de sus miembros son Google, HTC, Dell, Intel, Motorola, Qualcomm, Texas Instruments, Samsung, LG, T-Mobile, Nvidia y Wind River Systems.
+Al mismo tiempo que se anunciaba la formación de la Open Handset Alliance el 5 de noviembre de 2007, la OHA presentó Android, una plataforma de código libre para teléfonos móviles basada en el núcleo operativo Linux. Una beta del SDK fue lanzada para desarrolladores el 12 de noviembre de 2007. Basado en una licencia de código libre, compite contra otras plataformas móviles propietarias de Apple, Microsoft, Nokia, Palm, BlackBerry (compañía) y Bada.
+
+El primer teléfono comercialmente disponible con Android fue el T-Mobile G1 (también conocido como HTC Dream). Fue aprobado por la FCC el 18 de agosto de 2008, y salió a la venta el 22 de octubre.
+\\
+\\
+\\
+\\
+{\bf ASOP}
+La versión básica de Android es conocida como Android Open Source Project (AOSP). La cual está disponible desde la página de Android.
+\\
+\\
+\\
+\\
+{\bf CyanogenMod}
+Poco después de la introducción del terminal HTC Dream en septiembre de 2008, la comunidad de desarrolladores Android encontró un método para obtener permisos de superusuario (root) en el subsistema Linux de Android (procedimiento conocido como 'rooteado' del dispositivo). Este descubrimiento, combinado con la naturaleza de código abierto de Android, permitió modificar los firmwares originales y reinstalarlos en el teléfono a voluntad. 
+
+CyanogenMod, comúnmente abreviado y conocido como CM, fue un sistema operativo de código abierto discontinuado para teléfonos móviles y tabletas basado principalmente en el popular sistema operativo Android. Fue desarrollado como software libre y de código abierto basado en las versiones oficiales de Android desarrolladas por Google donde se le agrega código propio y de terceros. Siguió un modelo de desarrollo rolling release.
+
+Ofreció varias características,herramientas y aplicaciones adicionales que no se encuentran en las versiones oficiales basadas en Android suministradas por los fabricantes originales de Teléfonos móviles. Algunas de estas características son el soporte nativo de temas, soporte para códec de audio FLAC, una gran cantidad de nombres de puntos de acceso, un cliente de OpenVPN, una aplicación de control de permisos por aplicación llamado Privacy Guard, soporte para tethering mediante Wi-Fi, Bluetooth o USB, overclocking de CPU y otras mejoras de desempeño, acceso de superusuario, entre otras.
+
+CyanogenMod aseguraba que sus modificaciones mejoran el rendimiento y la fiabilidad frente a las versiones oficiales del software. De acuerdo con sus desarrolladores y debido a su modelo de desarrollo de código abierto (lo cual hace que cualquier individuo pueda verificar la autenticidad de esta afirmación), CyanogenMod no contiene spyware o bloatware.
+
+Los servicios de CyanogenMod dejaron de estar operativos a partir del 31 de diciembre de 2016, siendo discontinuado y sustituido en su lugar por el proyecto abierto LineageOS.
+
+\section{Herramientas de Desarrollo Open Source}
+Una gran cantidad de herramientas han sido creadas orientadas principalmente al desarrollo de aplicaciones multiplataforma tanto como para sistemas operativos open source como para propietarios. Estas herramientas en su gran mayoria son Open Source 
+Entre ellas podemos encontrar:
+\begin{itemize}
+	 \item React Native
+ 	 \item Ionic
+ 	 \item Cordova y sus Librerias
+\end{itemize}
