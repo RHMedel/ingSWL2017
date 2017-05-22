@@ -1,1 +1,326 @@
 \chapter{Reglas de diseño y programación}
+\section{¿Por qué?}
+
+{En toda comunidad se deben tener reglas, y como tal, las comunidades de software libre no son la excepción. Por tanto al ser un entorno de trabajo tan grande, es necesario poder ponerse de acuerdo entre los participantes.}
+
+\section{Códigos o Reglas de Conducta}
+
+\begin{itemize}
+\item Respetar otros committers
+\item Respetar otros colaboradores.
+\item Debatir y estudiar cualquier cambio significativo antes de comprometerse.
+\item Respetar los Mantenedores existentes (Si están en la lista del campo de Mantenedores del Makefile o en los Mantenedores del directorio superior).
+El mantenedor es responsable de mantener el puerto actualizado y asegurarse de que funciona correctamente. Los puertos son una forma que tienen de trabajar.
+\item Cualquier cambio en disputa debe ser respaldado hasta que se lleve a cabo y se resuelva la disputa si es solicitado por un mantenedor. cambios relacionados con la seguridad pueden anular los deseos de un mantenedor, a discreción del oficial de seguridad.
+\item No luchar en público con otros committers; se ve mal.
+\item Respeto todos los códigos se congela y leer el committers y developer listas de correo en el momento oportuno, para saber cuándo una congelación de código está en vigor.
+\item En caso de duda sobre cualquier procedimiento, pregunte primero, asegurándose que sea una pregunta q ya había sido debatida o contestada anteriormente
+\item Probar los cambios.
+\item Cuidado con los compromisos que asume
+\end{itemize}
+
+{Sea considerado. Nuestro trabajo será utilizado por otras personas, y que a su vez dependerá de la labor de los demás. Cualquier decisión que tome afectará a usuarios y colegas, y debemos tomar en cuenta las consecuencias al tomar decisiones. Ubuntu tiene millones de usuarios y miles de contribuyentes. Incluso si no es obvio en ese momento, nuestra contribución a Ubuntu será el impacto del trabajo de otros. Por ejemplo, cambios en el código, la infraestructura, la política, la documentación y traducciones durante una liberación pueden influir negativamente en el trabajo de otros.
+
+Sea respetuoso. La comunidad Ubuntu y sus miembros, se tratan unos a otros con respeto. Todo el mundo puede hacer una valiosa contribución a Ubuntu. Puede que no siempre estén de acuerdo, pero los desacuerdos no son excusa para un mal comportamiento o malos modales. Todos podemos experimentar algo de frustración, pero no podemos permitir que la frustración se convierta en un ataque personal. Es importante recordar que una comunidad donde la gente se siente incómoda o amenazada no es productiva. Esperamos que los miembros de la comunidad Ubuntu sean respetuosos cuando se trata de otros contribuyentes, así como con personas fuera del proyecto Ubuntu y con los usuarios de Ubuntu.
+
+Colabore. La colaboración es fundamental para Ubuntu y para la comunidad de software libre. Esta colaboración implica que los individuos trabajen con otros equipos dentro de Ubuntu, que los equipos de trabajo trabajen con otros equipos dentro de Ubuntu, y que los individuos y los equipos de trabajo de Ubuntu trabajen en otros proyectos fuera de Ubuntu. Esta colaboración se reduce la redundancia, y mejorar la calidad de nuestro trabajo. Interna y externamente, que siempre debe estar abierto a la colaboración. Siempre que sea posible, debemos trabajar en estrecha colaboración con los proyectos superiores y otros en la comunidad de software libre para coordinar nuestra técnica, promoción, documentación y otros trabajos. Nuestro trabajo debe ser hecho de forma transparente y deberíamos implicar a tantas partes interesadas como sea posible}
+
+\begin{itemize}
+\item Documentar nuestro trabajo
+\item Informar a otros regularmente de nuestro progreso
+\end{itemize}
+
+{Cuando no estamos de acuerdo, se consulta a otros. Los desacuerdos, tanto sociales como técnicos, ocurren todo el tiempo y la comunidad de Ubuntu no es la excepción. Es importante que resolver los desacuerdos y diferentes opiniones de manera constructiva y con la ayuda de la comunidad y los procesos de la comunidad. Tenemos la Junta Técnica, el Consejo de la Comunidad, y una serie de órganos de gobierno de otros que ayudan a decidir el camino correcto para Ubuntu. También hay varios equipos y Líderes de Equipo, que pueden ser capases de ayudarnos a descubrir la mejor dirección para Ubuntu. Cuando nuestros objetivos difieren notablemente, alentamos la creación de conjuntos alternativos de paquetes, o distribuciones derivadas, utilizando el marco de gestión de paquetes de Ubuntu, para que la comunidad pueda probar nuevas ideas y contribuir a la discusión.
+
+Cuando no estamos seguros, pidamos ayuda. Nadie sabe todo, y nadie está obligado a ser perfecto en la comunidad de Ubuntu. Hacer preguntas evita muchos problemas, por lo que alentamos a hacer preguntas. A los que se les formulan las preguntas deben ser receptivos y colaboradores. Sin embargo, al hacer una pregunta, se debe tener cuidado de hacerlo en un foro apropiado.
+
+Renuncie consideradamente. Los miembros de cada proyecto van y vienen, y Ubuntu no es diferente. Cuando alguien abandona o se desconecta del proyecto, en todo o en parte, le pedimos que lo hagan de una manera que minimice la interrupción al proyecto. Esto significa que debe decirle a la gente que están dejando y tomar las medidas adecuadas para asegurar que otros puedan continuar donde lo dejaron.}
+
+\section{Reglas de Diseño}
+{Las reglas de diseño sirven de guía para el desarrollo, guiando al programador en la toma de decisiones al tratar de resolver una tarea. Como en muchos otros ámbitos, en la programación existen incontables posibilidades para resolver un problema (crear un programa), y todas ellas tienen sus ventajas y desventajas. Mediante las reglas de diseño se intenta guiar a que los integrantes de la comunidad encaren la resolución de los problemas generalmente de la misma forma, y priorizando los mismos aspectos.}
+
+\begin{enumerate}
+\item Regla de Modularidad: Escribe partes simples, conectadas por interfaces simples.
+\item Regla de Claridad: ser Claro es mejor que ser ingenioso.
+\item Regla de Separación: Separa las reglas del funcionamiento; separa los interfaces de los mecanismos.
+\item Regla de Simplicidad: Diseña para la simplicidad; añade complejidad sólo donde sea estrictamente necesario.
+\item Regla de Parsimonia: Escribe un programa complejo sólo cuando sea evidente que no existe otra solución posible.
+\item Regla de Transparencia: Diseña para la visibilidad, para hacer más fácil la inspección y la corrección de fallos.
+\item Regla de Robustez: la Robustez es hija de la transparencia y la simplicidad.
+\item Regla de Representación: Convierte el conocimiento en datos, para que la lógica de los programas pueda ser sencilla y robusta.
+\item Regla de Mínima Sorpresa: En diseño de interfaces, haz siempre lo menos sorprendente.
+\item Regla de Silencio: Cuando un programa no tenga nada sorprendente que decir, no debería decir nada.
+\item Regla de Reparación: Cuando tengas que mostrar un error, falla estridentemente y lo antes posible.
+\item Regla de Economía: el tiempo del programador es caro; consérvalo sobre el tiempo de la máquina.
+\item Regla de Generación: Evita hacer cosas a mano; escribe programas que escriban programas siempre que puedas.
+\item Regla de Optimización: Prototipo antes de pulir. Haz que funcione antes de optimizarlo.
+\item Regla de Diversidad: Desconfía de todo lo que diga “esta es la única forma correcta”.
+\item Regla de Extensibilidad: Diseña para el futuro, porque estará aquí antes de lo que piensas.
+\end{enumerate}
+
+\section{Reglas de Programación}
+{Las reglas de programación sirven principalmente para que los integrantes de la comunidad puedan de manera más sencilla leer e interpretar el código escrito por otros integrantes, además en general sirven para tratar de evitar problemas futuros. En general, en las comunidades las reglas, de programación más comunes son las que indican que "estilo" darle al código, como ser la cantidad y tipo de caracteres se utilizan para indentar (espacios o tabs), como alinear las distintas partes de las estructuras del código y convenciones respecto de los nombres utilizados para las variables y demás. Todas estas no cambian en sí mismas el programa resultante, pero si hacen mucho en facilitar la lectura del código entre los integrantes de la comunidad.
+
+A continuación se presentan distintos ejemplos:
+}
+
+\subsection{coreutils}
+
+\begin{verbatim}
+Curly braces: use judiciously
+=============================
+Omit the curly braces around an "if", "while", "for" etc. body only when
+That body occupies a single line.  In every other case we require the braces.
+This ensures that it is trivially easy to identify a single-*statement* loop:
+Each has only one *line* in its body.
+
+Omitting braces with a single-line body is fine:
+
+ 	while (expr)
+   	single_line_stmt ();
+
+However, the moment your loop/if/else body extends onto a second line,
+for whatever reason (even if it's just an added comment), then you should
+Add braces.  Otherwise, it would be too easy to insert a statement just
+before that comment (without adding braces), thinking it is already a
+multi-statement loop:
+
+ 	while (true)
+   	/* comment... */  	// BAD: multi-line body without braces
+   	single_line_stmt ();
+
+Do this instead:
+
+ 	while (true)
+   	{  /* Always put braces around a multi-line body.  */
+     	/* explanation... */
+     	single_line_stmt ();
+   	}
+
+There is one exception: when the second body line is not at the same
+indentation level as the first body line.
+
+ 	if (expr)
+   	error (0, 0, _("a diagnostic that would make this line"
+                  	" extend past the 80-column limit"));
+
+It is safe to omit the braces in the code above, since the
+further-indented second body line makes it obvious that this is still
+a single-statement body.
+
+To reiterate, don't do this:
+
+ 	if (expr)
+   	while (expr_2)    	// BAD: multi-line body without braces
+     	{
+       	...
+     	}
+
+Do this, instead:
+
+ 	if (expr)
+   	{
+     	while (expr_2)
+       	{
+         	...
+       	}
+   	}
+\end{verbatim}
+
+{Conclusión, si el cuerpo de un if, for, while, etc. se “ve” como si tuviera muchas líneas, entonces se DEBEN usar las llaves {}. Sólo si el cuerpo es exactamente una línea entonces se permite evitar las llaves.}
+
+\subsection{Kernel de Linux}
+
+\begin{itemize}
+
+\item\textbf{Indentación:}
+{Los tabs deben ser de 8 caracteres al igual que las sangrías.
+Justificación: Se busca definir donde un bloque de control comienza y termina. 
+
+Cómo funciona la sangría si tiene grandes sangrías: Algunas personas afirman que tener indentación de 8 caracteres hace que el código se mueve demasiado hacia la derecha y dificulta la lectura en una pantalla de terminal de 80 caracteres. 
+La respuesta a eso es que si se necesitan más de 3 niveles de sangría algo anda mal en la lógica y se debe arreglar.
+
+La forma preferida de facilitar varios niveles de sangría en una instrucción switch es alinear las etiquetas `` switch`` y sus subordinadas `` case`` en la misma columna.}
+
+\item\textbf{Romper líneas largas y Strings:}
+{El estilo de codificación tiene que ver con la facilidad de lectura y la facilidad de mantenimiento utilizando herramientas disponibles.
+
+El límite de la longitud de líneas es de 80 columnas, y este límite es muy preferido.
+Las sentencias de más de 80 columnas se dividirán en fragmentos, lo cual aumentará significativamente la legibilidad y no ocultará la información.
+}
+
+\item\textbf{Espacios y llaves:}
+Para bloques de sentencia sin función (if, switch, for, while, do), se aplican las llaves como sigue:
+
+\begin{verbatim}
+if (x is true) {
+    	    we do y
+	}
+
+switch (action) {
+	case KOBJ_ADD:
+	        return "add";
+	case KOBJ_REMOVE:
+	        return "remove";
+	case KOBJ_CHANGE:
+	        return "change";
+	default:
+    	    return NULL;
+	}
+\end{verbatim}
+
+
+{Las funciones son un caso especial; tienen una llave de apertura en la siguiente línea, como se muestra a continuación:}
+
+\begin{verbatim}
+int function(int x)
+	{
+	        body of function
+	}
+\end{verbatim}
+
+{Se debe tener en cuenta que las llaves de cierre se encuentran solas en una sola línea, exceptuando casos donde es seguida por una continuación de la misma sentencia, por ejemplo:}
+
+\begin{verbatim}
+do {
+	        body of do-loop
+	} while (condition);
+\end{verbatim}
+O este otro caso:
+\begin{verbatim}
+	if (x == y) {
+	        ..
+	} else if (x > y) {
+	        ...
+	} else {
+	        ....
+	}
+\end{verbatim}
+
+
+\item\textbf{Espacios:}
+{Utilice espacios después de la mayoría de las palabras claves. Las excepciones son sizeof, typeof, alignof, y \_attribute\_, que parecen funciones (usualmente se utilizan paréntesis en linux.)
+Por lo cual, las sentencias que quedan para utilizar los espacios serían: If, Switch, Case, For, Do, While.
+También utilice espacios en la mayoría de los operadores binarios y ternarios, como ser: 
+\begin{verbatim}
+=  +  -  <  >  *  /  %  |  &  ^  <=  >=  ==  !=  ?  :    
+\end{verbatim}
+
+No deje espacios en blanco al final de las líneas. Algunos editores con sangría inteligente insertarán espacios en blanco al principio de las nuevas líneas según corresponda, para que pueda comenzar a escribir la siguiente línea de código de inmediato. Sin embargo, algunos de estos editores no eliminan los espacios en blanco. Como resultado, se terminan con líneas que contienen espacios en blanco.
+}
+
+
+\item\textbf{Nombrado:}
+{Llamar a las variables cortas, y fácil de entender como por ejemplo:
+ThisVariableIsATemporaryCounter: llamarlo TMP.
+Sin embargo, Es necesario que los nombres de las variables globales y de las funciones sean descriptivos. Como por ejemplo: count\_active\_users (), no llamarlo cau().
+Los nombres de variables locales deben ser cortos, y al punto. Si tiene un contador de bucle de número entero aleatorio, probablemente debería llamarse i. Llamarlo loop\_counter no es productivo. De la misma manera que tmp puede ser usado para nombrar variables que aguarden un valor temporal.}
+
+\item\textbf{Funciones:}
+{Las funciones deben ser cortas y claras, y hacer sólo una cosa. Deben encajar en una o dos pantallas de texto, hacer una cosa y hacerlo
+La longitud máxima de una función es inversamente proporcional a la complejidad y nivel de sangría de esa función. Por lo tanto, si usted tiene una función conceptualmente simple donde usted tiene que hacer un montón de cosas pequeñas para muchos casos diferentes, está bien tener una función más larga.
+Otra medida de la función es el número de variables locales. No deben exceder 5-10, o usted está haciendo algo mal. Vuelva a pensar la función, y dividirlo en pedazos más pequeños. Un cerebro humano generalmente puede hacer un seguimiento de cerca de 7 cosas diferentes, nada más y se confunde. Sabes que eres brillante, pero quizás quieras entender lo que hiciste hace 2 semanas.}
+
+\item\textbf{Comentarios:}
+Si bien los comentarios son buenos y pueden ser considerados como una buena práctica, se debe evitar caer en el peligro del exceso.
+Para tener en cuenta:
+
+NUNCA intente explicar cómo funciona su código en un comentario: es mucho mejor escribir el código para que el trabajo sea obvio, y es una pérdida de tiempo explicar el código mal escrito.
+
+Los comentarios deben buscar explicar LO QUE HACE el código, NO COMO.
+Para casos de funciones es preferible que los comentarios se ubiquen en la cabecera de esta y no dentro del cuerpo.
+Para comentarios multilínea el formato es:
+\begin{verbatim}
+/*
+ * This is the preferred style for multi-line
+ * comments in the Linux kernel source code.
+ * Please use it consistently.
+ *
+ * Description:  A column of asterisks on the left side,
+ * with beginning and ending almost-blank lines.
+ */
+\end{verbatim}
+Para el caso de net y drivers la convención en el uso de comentarios es casi la misma, pero la primera línea no va en blanco.
+
+\end{itemize}
+
+
+
+\subsection{Proyecto Unix}
+
+
+
+{Rob Pike, uno de los grandes maestros de C, propuso las siguientes reglas de la programación:}
+
+\begin{itemize}
+\item\textbf{Cuellos de botella:}
+{No se puede decir dónde un programa está  gastando más tiempo, producto de un cuello de botella ( Bottlenecks). Los Bottlenecks ocurren en lugares inesperados, así que no trate de adivinar o de suponer estas trabas de velocidad hasta que haya demostrado con total seguridad dónde está el bottlenecks.}
+
+\item\textbf{Medir:}
+{No suponga que una parte del código es lenta hasta que se mida.}
+
+\item\textbf{Algoritmos sofisticados:}
+{Los algoritmos sofisticados son lentos cuando n es pequeño y n es generalmente pequeño. Los algoritmos sofisticados tienen constantes grandes. Hasta que sabes que n con frecuencia va a ser grande, no se divierte. (Incluso si n se hace grande, use primero la Regla 2.)}
+
+\item\textbf{Simplicidad:}
+{. Utilice algoritmos simples, así como estructuras de datos simples.}
+
+\item\textbf{Los datos dominan:}
+{Si ha elegido las estructuras de datos adecuadas y tienen las cosas bien organizadas, los algoritmos casi siempre serán evidentes, entendibles y simples. Las estructuras de datos, no los algoritmos, son fundamentales para la programación.}
+\end{itemize}
+
+
+\subsection{Gnu Coding Standars}
+
+\begin{enumerate} 
+\item Formato del código fuente:
+	\begin{enumerate}
+	\item {\bf Longitud de línea de código:} La longitud de las líneas de código no deben superar los 79 caracteres, para maximizar la legibilidad en la amplia gama de entornos.
+	\item {\bf Definición de Funciones:}
+	\begin{enumerate}
+	\item La apertura de llaves (“\{“) de la definición de una función debe ser en la columna 1 de la línea, ya que varias herramientas buscan llaves abiertas en la columna uno para encontrar los comienzos de las funciones en lenguaje C.
+	\item 	Evite poner llave abierta (“\{“), paréntesis abierto (“(“) o corchete abierto (“[“) en la columna uno cuando están dentro de una función, de modo que no inicien una definición de función. La llave abierta que inicia un cuerpo de estructura puede ir en la columna uno si le resulta útil tratar esa definición como una definición de función.
+	\item 	También es importante que los nombres de las definiciones de funciones inicien en la columna uno. Esto ayuda a las personas a buscar más rápido, y también puede ayudar a ciertas herramientas a reconocerlas.
+	\end{enumerate}
+		\item {\bf Consistencia de estilos:}, No consideramos estas recomendaciones como requisitos, ya que no causa problemas a los usuarios si dos programas diferentes tienen diferentes estilos de formato. Pero cualquiera que sea el estilo que utilices, úsalo de forma consistente, ya que una mezcla de estilos dentro de un programa tiende a parecer feo. Si está contribuyendo cambios a un programa existente, siga el estilo de ese programa.
+		\item {\bf Utilización de espacios:}, Nos resulta más fácil leer un programa cuando tiene espacios antes de los paréntesis abiertos y después de las comas. Especialmente después de las comas.
+		\item {\bf Operadores diferentes:},Trate de evitar tener dos operadores de precedencia diferente en la misma línea.
+		\item {\bf Uso de paréntesis: },Use paréntesis para separar anidamiento y que sea más fácil de entender.
+		
+	\end{enumerate}
+	\item Comentar el Código
+	\begin{enumerate}
+	\item {\bf Propósito del archivo:}, : Escriba un breve comentario al comienzo de cada archivo de código, con el nombre del archivo y una línea o dos sobre el propósito general del archivo.
+	\item {\bf Idioma de comentarios:},Escriba los comentarios de un programa GNU en inglés, porque el inglés es el único idioma que casi todos los programadores de todos los países pueden leer. Si no escribe bien el inglés, trate de escribirlos como pueda y luego solicite a otras personas que lo ayuden a reescribirlos. Si no puede escribir comentarios en inglés, por favor, encuentre a alguien que trabaje con usted y traduzca sus comentarios al inglés.
+	\item {\bf Funciones:}, que trabaje con usted y traduzca sus comentarios al inglés.
+c)	Funciones: Ponga un comentario sobre cada función diciendo qué hace la función, qué tipo de argumentos obtiene, qué significan los posibles valores de los argumentos y para que se utiliza. También el significado de lo que la función devuelve, en caso de retornar algún valor.
+	\begin{enumerate}
+	\item i)	El comentario de una función es mucho más claro si se utilizan los nombres de los argumentos para hablar de los valores de los argumentos. El propio nombre de la variable debe ser minúscula, pero escríbalo en mayúsculas cuando esté hablando acerca del valor en lugar de la variable en sí.
+	\end{enumerate}
+	\item {\bf Formato de comentarios}, Por favor ponga dos espacios después del final de una oración en sus comentarios, para que los comandos de sentencia de Emacs funcionen. Además, escriba frases completas y la primera letra de la primera palabra en mayúscula. Si un identificador en minúscula viene al principio de una oración, ¡no lo capitalice! Cambiar la ortografía hace que sea un identificador diferente. Si no le gusta iniciar una oración con una letra minúscula, escriba la oración de manera diferente.
+	\end{enumerate}
+	\item Uso Limpo de los Constructores C
+	\begin{enumerate}
+	\item {\bf Declaración de tipos de objeto.},Por favor declare explícitamente los tipos de todos los objetos. Por ejemplo, debe declarar explícitamente todos los argumentos a funciones, y debe declarar funciones para devolver int en lugar de omitir el int.
+	\item {\bf Variable local separada para cada propósito distinto.}, Solía ser una práctica común usar las mismas variables locales (con nombres como tem) una y otra vez para diferentes valores dentro de una función. En lugar de hacerlo, es mejor declarar una variable local separada para cada propósito distinto, y darle un nombre que sea significativo. Esto no sólo hace que los programas sean más fáciles de entender, sino que también facilita la optimización por parte de los buenos compiladores. También puede mover la declaración de cada variable local en el ámbito más pequeño que incluya todos sus usos. Esto hace que el programa incluso más limpio.
+	\item {\bf Sombras de identificadores globales.},No utilice variables locales o parámetros que sombreen identificadores globales.
+	\item {\bf Declaración de múltiples variables.}, No declare múltiples variables en una declaración que se extiende por líneas. Inicie una nueva declaración en cada línea. 
+	\item {\bf Frenos de if-else}, Cuando tiene una sentencia if-else anidada en otra sentencia if, siempre coloque frenos alrededor del if-else
+	\item {\bf Sentencia else if.}, Si tiene una sentencia if anidada dentro de una sentencia else, escriba else if en una línea
+	\item {\bf Separación estructura y declaración}, No declare una variable de estructura y variables o typedefs en la misma declaración. En su lugar, declare la etiqueta de estructura por separado y luego utilícela para declarar las variables o typedefs.
+	\item {\bf Asignación dentro si-condiciones.}, Trate de evitar las asignaciones dentro de si-condiciones (las asignaciones dentro de-las condiciones están bien.
+	\end{enumerate}
+	\item Nombrar Variables, Funciones y Archivos
+	\begin{enumerate}
+	\item {\bf Nombres significativos.}, Busque nombres que proporcionen información útil sobre el significado de la variable o función. En un programa GNU, los nombres deben ser en inglés, al igual que otros comentarios.
+	\item {\bf Nombres cortos.},  Los nombres de variables locales pueden ser más cortos, ya que se utilizan sólo en un contexto, donde (presumiblemente) los comentarios explican su propósito.
+	\item {\bf Abreviaciones.}, Trate de limitar el uso de abreviaturas en los nombres de símbolos. Está bien hacer algunas abreviaturas, explicar lo que significan, y luego utilizar con frecuencia, pero no utilice un montón de abreviaturas oscuras.
+	\item {\bf Formato de nombre.}, Utilice subrayados para separar las palabras de un nombre, para que los comandos de palabra de Emacs puedan ser útiles dentro de ellos. Stick para minúsculas; Reserva mayúscula para macros y constantes de enumeración, y para prefijos de nombres que siguen una convención uniforme.
+	\item {\bf Banderas.}, Las variables que indican si se han especificado las opciones de la línea de comandos deben ser nombradas después del significado de la opción, no después de la letra de opción. Un comentario debe indicar el significado exacto de la opción y su letra. Por ejemplo,
+	\begin{verbatim}
+/ * Ignora los cambios en espacios en blanco horizontales (-b). * /
+	\end{verbatim}
+	Int ignore\_space\_change\_flag;
+	\item {\bf Valores enteros constantes.}, Cuando desee definir nombres con valores enteros constantes, use enum en lugar de '\#define'. GDB sabe sobre las constantes de enumeración.
+	\end{enumerate}
+\end{enumerate}
