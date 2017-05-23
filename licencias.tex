@@ -1,1 +1,73 @@
+\documentclass{book}
+\usepackage[spanish]{babel}
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc}
+\author{CRISTIAN - PARAMIO AGUSTIN - PISCITELLO LUCAS - SANTORO EXEQUIEL}
+\begin{document}
 \chapter{Licencias de software}
+\section{¿Qué es una Licencia de Software Libre?}
+
+Una licencia de software libre es un impreso que otorga al receptor de una pieza de software derechos extensivos para modificarla y redistribuir ese software. Estas acciones normalmente se proh'iben por las leyes de copyright, pero el que posee los derechos, normalmente el autor de un trozo de software, puede eliminar esas restricciones acompañando al software con una licencia de software que otorgue al receptor de estos derechos. El software que usa tales licencias se denomina software libre y esas libertades las concede el propietario del copyright.
+\\
+\\
+{\bf Historia}
+\\
+Las licencias de software libre antes de 1980 fueron generalmente estatutos informales escritos por los propios desarrolladores. En esa 'epoca de compartir el software era com'un en las comunidades de desarrolladores y hab'ia incluso preguntas sobre si la ley de copyright se aplicaba al software, as'i que las licencias no se escrib'ian desde un punto de vista que uno tuviese que defender en un juzgado. Copyleft todav'ia no había sido inventado, estas primeras licencias eran de tipo permisivo. A mediados de los años 80 el proyecto GNU produjo licencias de software libre individuales para cada uno de sus paquetes de software.\\
+Empezando a mediados de los 90 hasta mediados de los 2000, empez'o una moda donde las compa'n'ias y los proyectos escrib'ian sus propias licencias, o adaptaban las licencias de otros añadiendo su propio nombre. Esta proliferación de licencias condujo a problemas de complejidad y compatibilidad de licencia.
+\newpage
+\section{Organismos}
+\begin{itemize}
+     	\item {\bf Free Software Foundation }
+La Free Software Foundation (Fundación para el software libre) es una organización creada en octubre de 1985 por Richard Stallman y otros entusiastas del software libre con el prop'osito de difundir este movimiento.\\La Fundaci'on para el software libre (FSF) se dedica a eliminar las restricciones sobre la copia, redistribuci'on, entendimiento, y modificaci'on de programas de computadoras. Con este objeto, promociona el desarrollo y uso del software libre en todas las 'areas de la computaci'on, pero muy particularmente, ayudando a desarrollar el sistema operativo GNU.\\En sus inicios, la FSF destinaba sus fondos principalmente a contratar programadores para que escribiesen software libre. A partir de mediados de la d'ecada de 1990 existen ya muchas compa'n'ias y autores individuales que escriben software libre, por lo que los empleados y voluntarios de la FSF han centrado su trabajo fundamentalmente en asuntos legales, organizativos y promocionales en beneficio de la comunidad de usuarios de software libre.
+	\item {\bf Open Source Initiative}
+La Open Source Initiative (OSI, en español Iniciativa para el C'odigo Abierto) es una organizaci'on dedicada a la promoci'on del c'odigo abierto. Fue fundada en febrero de 1998 por Bruce Perens y Eric S. Raymond. Es una organizaci'on sin animo de lucro global que apoya y promueve el movimiento de c'odigo abierto. Entre otras cosas, mantenemos la definici'on de c'odigo abierto , y una lista de licencias que cumplen con esa definici'on.\\A principios de 1998, Netscape Communications Corporation junto con Raymond, publicaron el c'odigo fuente de su producto insignia Netscape Communicator como software libre, dada la baja de ganancias y dura competencia con el software Internet Explorer de Microsoft.\\Un grupo de personas interesadas en el software libre y en GNU/Linux decidieron introducir un t'ermino de mercadotecnia para el software libre, buscando posicionarlo como amigable para negocios y con menos carga ideol'ogica en su competencia con el software propietario. Esto condujo a la creaci'on del t'ermino Open Source (código abierto) y al cisma con Richard Stallman y su Fundación del Software Libre.
+	\item {\bf Proyecto fedora}
+Proyecto Fedora es la comunidad responsable de la producci'on de la distribuci'on Fedora, junto con una variedad de otros proyectos. El Proyecto Fedora es el resultado de la fusi'on entre Red Hat Linux y el antiguo Proyecto Fedora Linux en septiembre de 2003, y es patrocinado oficialmente por Red Hat, quien tiene un grupo de empleados trabajando en el c'odigo del proyecto. El Proyecto Fedora Linux desarrollaba paquetes extra para viejas distribuciones de Red Hat Linux (RHL 8, RHL 9, FC 1, FC 2), antes de convertirse en parte del Proyecto Fedora.
+	\item {\bf Directrices de software libre de Debian}
+Las directrices de software libre de Debian (DFSG) son un conjunto de directrices o criterios que el proyecto Debian utiliza para determinar si una licencia de software es una licencia de software libre, la que a su vez se utiliza para determinar si alg'un software puede incluirse en la distribución principal de Debian. Las directrices establecen estos requisitos:
+\begin{itemize}
+	\item Libre redistribuci\'on
+	\item Inclusión del c\'odigo fuente
+	\item Permitir que las modificaciones y trabajos derivados sean hechos bajo la misma licencia
+	\item	Integridad del c\'odigo fuente del autor, se debe permitir cuando menos la distribuci'on de modificaciones por medio de parches
+	\item Sin discriminaci\'on de personas o grupos
+	\item Sin discriminaci\'on de áreas de iniciativa, como el uso comercial
+	\item Distribuci\'on de la licencia, se necesita aplicar a todo al que se redistribuya el programa
+	\item La licencia no debe ser específica a Debian, b\'asicamente reiteraci\'on del punto anterior
+	\item La licencia no debe contaminar otro software
+\end{itemize}
+\end{itemize}
+\newpage
+\section {Problemas pr\'acticos con las Licencias}
+\begin{itemize}
+	\item {\bf Compatibilidad de licencias}
+Los paquetes de licencias de software que contienen explicaciones contradictorias, hacen imposible combinar el c'odigo de estos paquetes para crear nuevos paquetes de software. La compatibilidad de licencias entre una licencia copyleft y otra licencia es a menudo una compatibilidad de un solo sentido. La característica de esta compatibilidad es criticada por la Fundaci'on Apache, que ofrece la ciencia permisiva Apache que no tiene esta caracter'istica. Las licencias que no son copyleft como la FOSS tienen menos problemas de compatibilidad. Por ejemplo si una licencia dice que las versiones modificadas deben mencionar a los desarrolladores en cualquier material de marketing, y otra dice que las versiones modificadas no pueden contener atribuci'on adicional, entonces si alguien combina un paquete de software que usa una licencia con un paquete de software que usa la otra entonces ser'ia imposible satisfacer la combinaci'on porque estos requisitos son contradictorios y no se pueden completar a la vez, estos dos paquetes serían incompatibles. Cuando hablamos de las licencias de copyleft, ellas no son necesariamente compatibles con otras licencias de copyleft, incluso la versi'on 2 de la GPL por s'i misma no es compatible con la versión 3 de la GPL.
+	\item {\bf Prop'osito de uso}
+Restricciones sobre el uso del software no son generalmente aceptadas de acuerdo con la FSF, OSI, Debian, o las distribuciones basadas en BSD. Algunos ejemplos son prohibir el software s'olo para uso privado, para prop'ositos militares, para comparaci'on o marco de mercado, para un uso que conlleve cuestiones éticamente cuestionables, o en organizaciones comerciales.
+\end{itemize}
+\newpage
+\section {Tipos de Licencias}
+El software no se vende, se licencia. Una licencia es aquella autorización formal con carácter contractual que un autor de un software da a un interesado para ejercer actos de explotación legales. Es decir, el software no se compra, sino que se adquieren una serie de derechos sobre el uso que se le puede dar. En las licencias de software libre esos derechos son muy abiertos y permisivos, apenas hay restricciones al uso de los programas. De ah'i que ayude al desarrollo de la cultura. Pueden existir tantas licencias como acuerdos concretos se den entre el autor y el licenciatario. Desde el punto de vista del software libre, existen distintas variantes del concepto o grupos de licencias, las mismas pueden clasificarse en distintos grupos:\\
+
+\begin{itemize}
+\item Privativas:  Una licencia privativa concede, b'asicamente, el derecho a la instalación del software en el ordenador del usuario y su ejecución, de acuerdo con determinadas condiciones y restricciones, incumpliendo as'i, con algunas de las 4 libertades de un software libre.
+\item Libres: estas licencias pueden ser clasificadas a su vez en 3 tipos distintos:
+\begin{itemize}
+\item Permisivas: es una licencia de software libre flexible respecto a la distribuci'on, de modo que el software pueda ser redistribuido como software libre o software propietario, siendo libre la licencia original del autor.
+La caracter'istica peculiar de estas licencias se debe a que no poseen copyleft, ya que el trabajo derivado no tiene por qu'e mantenerse con el mismo r'egimen de derechos de autor que el original. Esto maximiza la libertad para quien recibe el software y quiere desarrollar algo derivado, permiti'endole elegir entre el amplio abanico de licencias existentes. No obstante, desde el punto de vista de los usuarios, esto se puede considerar como una restricci'on a su libertad, en el sentido de que el software propietario siempre restringe las libertades de los usuarios del mismo y las licencias permisivas, abren esta posibilidad. Los ejemplos m'as conocidos de este tipo de licencias son la Licencia MIT y la Licencia BSD.
+\item Copyleft d'ebil: hace referencia a las licencias que no se heredan a todos los trabajos derivados, dependiendo a menudo de la manera en que estos se hayan derivado. Se utiliza generalmente para la creaci'on de bibliotecas de software, con el fin de permitir que otros programas puedan enlazar con ellas y ser redistribuidos, sin el requerimiento legal de tener que hacerlo bajo la nueva licencia copyleft. Solamente se requiere distribuir los cambios sobre el software con copyleft d'ebil, no los cambios sobre el software que enlaza con el. Un claro ejemplo de este tipo de licencias es la Licencia P'ublica de Mozilla.
+\item Robustas: se centran en mantener la libertad a lo largo de toda la cadena de usuarios, desde su autor hasta el usuario final, para ello hace uso del copyleft obligando a que el trabajo derivado se mantenga con el mismo r'egimen de derechos de autor que el original. As'i un software licenciado bajo GPL que sea modificado y distribuido por un eslab'on intermedio de la cadena debe mantener la licencia GPL, maximizando la libertad de los usuarios finales.
+La condici'on de distribuirse bajo la misma licencia original y al tratarse de software libre, implica que siempre se tenga acceso al c'odigo.
+Los ejemplos más conocidos de este tipo de licencias son la GPL, LGPL y Affero GPL.
+\end{itemize}
+\end{itemize}
+\newpage
+\section{Papel de la FSF y OSI}
+
+{\bf Licencias de c'odigo abierto aprobadas por el OSI}
+El grupo OSI define y mantiene una lista de licencias de c'odigo abierto aprobadas por el mismo. OSI est'a de acuerdo con la FSF en la mayor'ia de las licencias de software libre, pero difiere en algunos de la lista de la FSF. Por ejemplo, se posiciona del lado de la definición de c'odigo abierto m'as que de la definici'on de software libre. Considera que las leyes del grupo licencias de software libre permisivas son una referencia de implementación de una licencia software libre. Esto es sus requerimientos para aprobar las licencias son diferentes.
+\\
+{\bf Licencias de software libre aprobadas por la FSF}
+La FSF, el grupo que mantiene la definición de software libre, mantiene una lista de licencias de software libre no exhaustiva.12 La FSF es una organizaci'on sin 'animo de lucro cuya misi'on es promover la libertad de los usuarios de los ordenadores y defender los derechos de todos los usuarios del software libre. Los desarrolladores de software libre garantizan que todo el mundo tenga los mismos derechos para sus programas, cualquier usuario puede estudiar el c'odigo fuente, modificarlo, y compartir el programa. Por el contrario, la mayor'ia del software lleva una nota que impide a los usuarios estos derechos b'asicos, dejando a los usuarios susceptibles a los deseos de sus propietarios y a la vulnerabilidad de ser vigilados. La FSF prefiere las licencias de software libre copyleft (share-alike) mejor que las licencias de software libre permisivas para la mayor'ia de los prop'ositos. En su lista distingue entre las licencias de software libre que son compatibles o incompatibles con el la GPL de copyleft de la FSF.
+\\
+\end{document}
